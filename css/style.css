@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ?===sidebar==== */
+.sideBar-list {
+    width: 20%;
+    height: 100vh;
+    background-color: black;
+}
+.sideBar-show {
+    width: 10%;
+    height: 100vh;
+    background-color: #f1e607 ;
+}
+.sideBar {
+    display: flex;
+    position:fixed ;
+    width: 100%;
+}
+.yummi-img {
+    width: 80px;
+    padding-top: 50px;
+    padding-left: 20px;
+    border-radius: 60px;
+}
+.coloring{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 800;
+    font-size: 50px;
+    color: red;
+}
