@@ -1,0 +1,39 @@
+body {
+    --backgroundcolor: black;
+    background-color: black;
+    color: #f9f6f6;
+    overflow: hidden;
+}
+.nav-tab {
+    background-color: var(--backgroundcolor);
+}
+
+.logo-pic {
+    width: 50px;
+}
+i {
+    cursor: pointer;
+}
+
+.meal-layer {
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f6b5;
+    top: 100%;
+    transition: 0.5s;
+}
+.meal:hover .meal-layer {
+    top: 0%;
+}
+.side-nav-menu {
+    z-index: 99;
+}
+.loading-screen{
+    z-index: 999;
+    display: flex;
+}
+.inner-loading-screen{
+    z-index: 9;
+    position: absolute;
+    display: flex;
+}

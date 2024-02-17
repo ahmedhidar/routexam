@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400;500&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <title>yummi</title>
+</head>
+<body>
+<!-- ?========start navbar============ -->
+<div class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+<i class="fa fa-spinner text-info fa-spin fa-5x"></i>
+</div>
+
+<div class="side-nav-menu min-vh-100 position-fixed d-flex top-0">
+    <div class="nav-tab d-flex flex-column justify-content-between min-vh-100 p-4">
+    <div class="links">
+        <ul class="list-unstyled overflow-hidden">
+            <li onclick="showSearchInput();closeSidenav()" class="py-2 position-relative">search</li>
+            <li onclick="getCategories();closeSidenav()" class="py-2 position-relative">categories</li>
+            <li onclick="getArea();closeSidenav()" class="py-2 position-relative">area</li>
+            <li onclick="getIngredients();closeSidenav()" class="py-2 position-relative">ingredients</li>
+            <li onclick="showContacts();closeSidenav()" class="py-2 position-relative">contact us</li>
+        </ul>
+    </div>
+    <div class="nav-footer">
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <div class="nav-footer-content">
+            <p class="text-secondary">Copyright Â© 2019 All Rights
+                Reserved.</p>
+        </div>
+    </div>
+    </div>
+    <div class="nav-header min-vh-100 d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+        <img class="logo-pic" src="img/logo.png" alt="logo">
+        <i class="fa-solid fa-bars open-close fa-2x"></i>
+        <div>
+            <i class="fa-solid fa-globe d-block"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+        </div>
+    </div>
+</div>
+
+
+<!-- ?===========end of navbar=================== -->
+<div class="container" id="searchContainer">
+
+</div>
+
+<div class="min-vh-100 position-relative">
+    <div class="inner-loading-screen top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+        <i class="fa fa-spinner text-info fa-spin fa-5x"></i>
+    </div>
+
+    
+    <div class="container">
+        <div class="row p-5 g-4" id="rowData">
+    
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
